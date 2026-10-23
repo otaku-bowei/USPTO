@@ -1,0 +1,47 @@
+[{"stream_name":"stderr","time":10.715333316,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.715377835,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.715382796,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.715385681,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.66466966,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.664747945,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.664755878,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.664761974,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":13.540727173,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":13.541485581,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":13.541515056,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":13.541520866,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":13.541524181,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":13.541527211,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":13.541529902,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":13.541532814,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":13.541535658,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":13.541538268,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":13.5415409,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":13.541543697,"data":"Exception encountered at \"In [1]\":\n"}
+,{"stream_name":"stderr","time":13.541546387,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":13.541549133,"data":"FileNotFoundError                         Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":13.541551835,"data":"/tmp/ipykernel_16/774077029.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":13.541554763,"data":"     22 \n"}
+,{"stream_name":"stderr","time":13.541557919,"data":"     23 # 1) 载入环境开关 + 路径配置 + 设备探测\n"}
+,{"stream_name":"stderr","time":13.541561701,"data":"---\u003e 24 _run_nb('config.ipynb')\n"}
+,{"stream_name":"stderr","time":13.54156445,"data":"     25 # 2) 载入文件服务（数据读取 / 模型存取）\n"}
+,{"stream_name":"stderr","time":13.541567319,"data":"     26 _run_nb('file_service.ipynb')\n"}
+,{"stream_name":"stderr","time":13.541569922,"data":"\n"}
+,{"stream_name":"stderr","time":13.541572468,"data":"/tmp/ipykernel_16/774077029.py in _run_nb(path)\n"}
+,{"stream_name":"stderr","time":13.54161875,"data":"     10     \"\"\"执行 path 指向的 notebook 的全部代码单元格到当前 globals()。\"\"\"\n"}
+,{"stream_name":"stderr","time":13.541622436,"data":"     11     if not os.path.exists(path):\n"}
+,{"stream_name":"stderr","time":13.541625136,"data":"---\u003e 12         raise FileNotFoundError(f'找不到 notebook: {path}')\n"}
+,{"stream_name":"stderr","time":13.541628135,"data":"     13     with open(path, 'r', encoding='utf-8') as f:\n"}
+,{"stream_name":"stderr","time":13.541630786,"data":"     14         nb = json.load(f)\n"}
+,{"stream_name":"stderr","time":13.541633363,"data":"\n"}
+,{"stream_name":"stderr","time":13.541635861,"data":"FileNotFoundError: 找不到 notebook: config.ipynb\n"}
+,{"stream_name":"stderr","time":13.541638634,"data":"\n"}
+,{"stream_name":"stderr","time":16.586680711,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":16.586728597,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":16.817551168,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":16.817585548,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":17.802567505,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":17.892296546,"data":"[NbConvertApp] Writing 6088 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":21.233576916,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":21.934532964,"data":"[NbConvertApp] Writing 280718 bytes to __results__.html\n"}
+]

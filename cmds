@@ -1,0 +1,12 @@
+# 1. 本地写代码（VSCode + codebuddy）
+# 2. 推到 Kaggle
+kaggle kernels push
+
+# 3. 看状态
+kaggle kernels status yourname/uspto-train
+
+# 4. 拉日志
+kaggle kernels output yourname/uspto-train -p ./logs
+
+# 5. 拉产物
+kaggle kernels output yourname/uspto-train -p ./outputs

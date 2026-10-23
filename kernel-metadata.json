@@ -1,0 +1,15 @@
+{
+  "id": "badguywang/uspto-smoke-test-001",
+  "title": "USPTO Smoke Test 001",
+  "code_file": "train/train.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": ["us-patent-phrase-to-phrase-matching"],
+  "kernel_sources": [],
+  "model_sources": []
+}
